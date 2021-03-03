@@ -27,7 +27,7 @@ namespace ConsoleUI
         {
             ProductManager productManager = new ProductManager(new EfProductDal(), new CategoryManager(new EfCategoryDal()));
             var result = productManager.GetProductDetails();
-            if (result.Succes == true)
+            if (result.Success == true)
             {
                 foreach (var product in result.Data)
                 {

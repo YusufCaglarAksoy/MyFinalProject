@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             var result = _productService.GetAll();
-            if (result.Succes)
+            if (result.Success)
             {
                 return Ok(result);
             }
@@ -38,7 +38,7 @@ namespace WebAPI.Controllers
         {
             var result = _productService.GetById(id);
 
-            if (result.Succes)
+            if (result.Success)
             {
                 return Ok(result);
             }
@@ -50,7 +50,7 @@ namespace WebAPI.Controllers
         public IActionResult Add(Product product)
         {
             var result = _productService.Add(product);
-            if (result.Succes)
+            if (result.Success)
             {
                 return Ok(result);
             }
